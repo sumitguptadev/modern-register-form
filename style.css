@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(./bg3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginbody > h2{
+    color: antiquewhite;
+    font-family: "Bricolage Grotesque", sans-serif;
+   
+    
+}
+
+
+.loginbody{
+    
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    height: 85vh;
+    background-color: rgba(190, 184, 184, 0.124);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+   
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.lgdetails{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 8px 5px;
+    gap: 10px;
+}
+
+.lgdetails input{
+     font-family: "Bricolage Grotesque", sans-serif;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.checkbox > input{
+    cursor: pointer;
+}
+
+.footer{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer > button {
+    font-family: "Jost", sans-serif;
+    position: relative;
+    width: 80%;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #025dacd8;
+    color: white;
+    overflow: hidden;   /* IMPORTANT */
+    z-index: 1;
+}
+
+.footer > button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: white;
+    z-index: -1;
+
+    transform: translateY(100%);  /* start bottom se */
+    transition: transform 0.4s ease;
+}
+
+.footer > button:hover::before {
+    transform: translateY(0);
+}
+
+/* text color change for better effect */
+.footer > button:hover {
+    color: #004d91;
+}
+
+
+
+.footer > p{
+    font-size: 12px;
+}
+
+.footer > p > span{
+    font-weight: 550;
+    cursor: pointer;
+}
